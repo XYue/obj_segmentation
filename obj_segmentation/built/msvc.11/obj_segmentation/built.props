@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <PCL_CONFIG_LINK>static</PCL_CONFIG_LINK>
+        <EIGEN_CONFIG_LINK>static</EIGEN_CONFIG_LINK>
+        <RPLY_CONFIG_LINK>static</RPLY_CONFIG_LINK>
+    </PropertyGroup>
+
+    <ImportGroup Label="PropertySheets">
+      <Import
+	    	Project="..\..\..\..\..\..\Shared\pcl\kit\pcl_latest.props"
+	    	Condition="'$(PCL_IMPORT)'!='true'" />
+
+      <Import
+	    	Project="..\..\..\..\..\..\Shared\eigen\kit\eigen_latest.props"
+	    	Condition="'$(EIGEN_IMPORT)'!='true'" />
+
+      <Import
+            Project="..\..\..\..\..\..\Shared\rply\kit\rply_latest.props"
+            Condition="'$(RPLY_IMPORT)'!='true'" />
+    </ImportGroup>
+    
+</Project>

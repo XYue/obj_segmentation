@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{8f6f0a49-8106-4e2e-ab74-a9affbae4237}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mesh_segmentation">
+      <UniqueIdentifier>{7bcb5038-0453-480b-ae12-aa041d56c068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pcl_utility">
+      <UniqueIdentifier>{39d7c9e8-9211-4282-9d19-d6ea4eb0823f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\mesh_segmentation\mesh_segmentation.hpp">
+      <Filter>mesh_segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\pcl_utility\pcl_utility.hpp">
+      <Filter>pcl_utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\mesh_segmentation\mesh_segmentation.cpp">
+      <Filter>mesh_segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\main\main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\pcl_utility\pcl_utility.cpp">
+      <Filter>pcl_utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
